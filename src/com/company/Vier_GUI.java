@@ -1336,6 +1336,16 @@ public class Vier_GUI
         }
     }
 
+    private void tastenAbfrage (char buchstabe)
+    {
+        if      (buchstabe == '1') buttonPressed(0);
+        else if (buchstabe == '2') buttonPressed(1);
+        else if (buchstabe == '3') buttonPressed(2);
+        else if (buchstabe == '4') buttonPressed(3);
+        else if (buchstabe == '5') buttonPressed(4);
+        else if (buchstabe == '6') buttonPressed(5);
+        else if (buchstabe == '7') buttonPressed(6);
+    }
 
     private Vier_GUI ()
     {
@@ -1471,6 +1481,25 @@ public class Vier_GUI
             }
         });
 
+        button10.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
+        });
+
         button20.addFocusListener(new FocusListener()
         {
             @Override
@@ -1486,6 +1515,25 @@ public class Vier_GUI
                 AbstractButton btn = (AbstractButton) e.getSource();
                 btn.setIcon(new ImageIcon(Class.class.getResource("/img/arrow-down-rollover.png")));
             }
+        });
+
+        button20.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
         });
 
         button30.addFocusListener(new FocusListener()
@@ -1505,6 +1553,25 @@ public class Vier_GUI
             }
         });
 
+        button30.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
+        });
+
         button40.addFocusListener(new FocusListener()
         {
             @Override
@@ -1520,6 +1587,25 @@ public class Vier_GUI
                 AbstractButton btn = (AbstractButton) e.getSource();
                 btn.setIcon(new ImageIcon(Class.class.getResource("/img/arrow-down-rollover.png")));
             }
+        });
+
+        button40.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
         });
 
         button50.addFocusListener(new FocusListener()
@@ -1539,6 +1625,25 @@ public class Vier_GUI
             }
         });
 
+        button50.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
+        });
+
         button60.addFocusListener(new FocusListener()
         {
             @Override
@@ -1556,6 +1661,25 @@ public class Vier_GUI
             }
         });
 
+        button60.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
+        });
+
         button70.addFocusListener(new FocusListener()
         {
             @Override
@@ -1571,6 +1695,25 @@ public class Vier_GUI
                 AbstractButton btn = (AbstractButton) e.getSource();
                 btn.setIcon(new ImageIcon(Class.class.getResource("/img/arrow-down-rollover.png")));
             }
+        });
+
+        button70.addKeyListener(new KeyListener() {
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                tastenAbfrage(e.getKeyChar());
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+
         });
 
         //----Die weiteren Buttons sind nur für die Navigationstasten und für die Funktion des Programms nicht relevant -------------
@@ -1626,7 +1769,7 @@ public class Vier_GUI
             frame.dispose();
             frame.setUndecorated(true);
 
-            fensterleiste.setBackground(Color.decode("#6380C2"));
+            fensterleiste.setBackground(Color.decode("#C2C2C2"));
             gruenerButton.setIcon(new ImageIcon(Class.class.getResource("/img/gruen.png")));
             gruenerButton.setRolloverIcon(new ImageIcon(Class.class.getResource("/img/gruen_mouseover.png")));
             gruenerButton.setMargin(new Insets(2, 5, 2, 5));
@@ -1657,7 +1800,7 @@ public class Vier_GUI
             frame.dispose();
             frame.setUndecorated(true);
 
-            fensterleiste.setBackground(Color.decode("#c2d901"));
+            fensterleiste.setBackground(Color.decode("#0178d8"));
             gruen2Button.setIcon(new ImageIcon(Class.class.getResource("/img/line.png")));
             gruen2Button.setRolloverIcon(new ImageIcon(Class.class.getResource("/img/line_rollover.png")));
             gruen2Button.setMargin(new Insets(0, 0, 0, 0));
